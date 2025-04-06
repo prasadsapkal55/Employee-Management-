@@ -37,7 +37,7 @@ pip install -r requirements.txt
 # 4. Create superuser (optional for admin access):
 python manage.py createsuperuser
 
-# 5. Setup database and run
+# 5. Setup database
 python manage.py makemigrations  # Create migrations from models
 python manage.py migrate        # Apply migrations to database
 
