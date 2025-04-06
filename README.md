@@ -131,9 +131,9 @@ Contributions are welcome! Here's how:
 
 ## 📧 Contact
 
-Prasad Sapkal - [prasadsapkal282@gmail.com]
-
-Project Link: [https://github.com/prasadsapkal55/Employee-Management-](https://github.com/prasadsapkal55/Employee-Management-)
+Prasad Sapkal  
+Email: [prasadsapkal282@gmail.com](mailto:prasadsapkal282@gmail.com)  
+GitHub: [@prasadsapkal55](https://github.com/prasadsapkal55)
 
 ---
 
