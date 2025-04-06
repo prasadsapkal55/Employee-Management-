@@ -134,7 +134,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Prasad Sapkal - [prasadsapkal282@gmail.com](mailto:your.email@example.com)
+Prasad Sapkal - [prasadsapkal282@gmail.com](mailto: prasadsapkal282@gmail.com.com)
 
 Project Link: [https://github.com/prasadsapkal55/Employee-Management-](https://github.com/prasadsapkal55/Employee-Management-)
 
