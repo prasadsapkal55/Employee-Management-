@@ -34,21 +34,20 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-
 # 4. Create superuser (optional for admin access):
-     python manage.py createsuperuser
+python manage.py createsuperuser
 
 # 5. Setup database and run
 python manage.py makemigrations  # Create migrations from models
 python manage.py migrate        # Apply migrations to database
 
 # 6. Run the development server:
-   python manage.py runserver
+python manage.py runserver
 
 # 7. Access the application at:
    - Main interface: `http://localhost:8000/show`
    - Admin panel: `http://localhost:8000/admin` (if superuser created)
-
+```
 ## 📂 Project Structure
 
 ```
