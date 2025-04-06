@@ -76,8 +76,8 @@ Employee-Management-/
 | Feature | Screenshot |
 |---------|------------|
 | **Add Employee** | ![Add Employee](https://github.com/prasadsapkal55/Employee-Management-/blob/main/add.jpg) |
-| **View Employees** | ![View Employees](https://github.com/prasadsapkal55/Employee-Management-/blob/main/screenshots/view_employees.png) |
-| **Edit Employee** | ![Edit Employee](https://github.com/prasadsapkal55/Employee-Management-/blob/main/screenshots/edit_employee.png) |
+| **View Employees** | ![View Employees](https://github.com/prasadsapkal55/Employee-Management-/blob/main/view.jpg) |
+| **Edit Employee** | ![Edit Employee](https://github.com/prasadsapkal55/Employee-Management-/blob/main/edit.jpg) |
 
 ## 🤝 Contributing
 
