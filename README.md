@@ -1,77 +1,45 @@
 # Employee Management System 🏢
 
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![GitHub last commit](https://img.shields.io/github/last-commit/prasadsapkal55/Employee-Management-?color=blue)
 
-A complete Django-based Employee Management System with full CRUD (Create, Read, Update, Delete) functionality.
+A lightweight Django-based Employee Management System with full CRUD functionality developed by Prasad Sapkal.
 
+## ✨ Features
 
-## 🚀 Features
+- **Simple Employee Management**:
+  - Add, view, edit, and delete employee records
+  - SQLite database (no additional setup required)
+  - Clean Bootstrap interface
+- **Easy to Deploy**:
+  - Default Django SQLite configuration
+  - Minimal dependencies
+  - Ready-to-run structure
 
-- **Employee Management**:
-  - Add new employees with all details
-  - View complete employee list
-  - Edit existing employee records
-  - Delete employees from the system
-- **Database**:
-  - MySQL integration for reliable data storage
-  - Django ORM for easy database operations
-- **User Interface**:
-  - Clean, responsive Bootstrap design
-  - Intuitive forms with validation
-  - Action buttons for all operations
-
-## 📦 Installation
+## 🚀 Getting Started
 
 ### Prerequisites
 - Python 3.6+
-- MySQL Server
 - pip package manager
 
-### Setup Instructions
+### Installation (3 Simple Steps)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/prasadsapkal55/Employee-Management-.git
-   cd Employee-Management-
-   ```
+```bash
+# 1. Clone the repository
+git clone https://github.com/prasadsapkal55/Employee-Management-.git
+cd Employee-Management-
 
-2. Create and activate virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+# 2. Set up virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Configure MySQL:
-   - Create a database:
-     ```sql
-     CREATE DATABASE employeemanagement;
-     ```
-   - Update database settings in `settings.py`:
-     ```python
-     DATABASES = {
-         'default': {
-             'ENGINE': 'django.db.backends.mysql',
-             'NAME': 'employeemanagement',
-             'USER': 'your_username',
-             'PASSWORD': 'your_password',
-             'HOST': 'localhost',
-             'PORT': '3306'
-         }
-     }
-     ```
-
-5. Run migrations:
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   ```
+# 3. Install dependencies and run
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
 
 6. Create superuser (optional for admin access):
    ```bash
