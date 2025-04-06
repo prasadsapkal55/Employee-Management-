@@ -54,8 +54,8 @@ Employee-Management-/
 ├── employee/                  # Main application
 │   ├── migrations/            # Database migrations
 │   ├── static/                # Static files (CSS, JS)
-│   │   ├── css
-│   │   ├── js
+│   │   ├── css/
+│   │   ├──── style.css
 │   ├── templates/             # HTML templates
 │   │   ├── edit.html          # Edit employee
 │   │   ├── index.html         # Add employee
