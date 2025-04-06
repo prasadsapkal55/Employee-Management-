@@ -20,11 +20,7 @@ A lightweight Django-based Employee Management System with full CRUD functionali
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.6+
-- pip package manager
-
-### Installation (3 Simple Steps)
+### Installation (4 Essential Steps)
 
 ```bash
 # 1. Clone the repository
@@ -35,11 +31,13 @@ cd Employee-Management-
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# 3. Install dependencies and run
+# 3. Install dependencies
 pip install -r requirements.txt
-python manage.py migrate
+
+# 4. Setup database and run
+python manage.py makemigrations  # Create migrations from models
+python manage.py migrate        # Apply migrations to database
 python manage.py runserver
-```
 
 6. Create superuser (optional for admin access):
    ```bash
