@@ -36,18 +36,14 @@ pip install -r requirements.txt
 
 
 # 4. Create superuser (optional for admin access):
-   ```bash
-   python manage.py createsuperuser
-   ```
+     python manage.py createsuperuser
 
 # 5. Setup database and run
 python manage.py makemigrations  # Create migrations from models
 python manage.py migrate        # Apply migrations to database
 
 # 6. Run the development server:
-   ```bash
    python manage.py runserver
-   ```
 
 # 7. Access the application at:
    - Main interface: `http://localhost:8000/show`
