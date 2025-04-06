@@ -126,7 +126,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-Your Name - your.prasadsapkal282@gmail.com
+Your Name - prasadsapkal282@gmail.com
 
 Project Link: [https://github.com/yourusername/django-crud-app](https://github.com/yourusername/django-crud-app)
 
