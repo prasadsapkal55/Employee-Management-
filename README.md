@@ -128,13 +128,10 @@ Contributions are welcome! Here's how:
 4. Push to the branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📧 Contact
 
-Prasad Sapkal - [prasadsapkal282@gmail.com](mailto: prasadsapkal282@gmail.com)
+Prasad Sapkal - [prasadsapkal282@gmail.com]
 
 Project Link: [https://github.com/prasadsapkal55/Employee-Management-](https://github.com/prasadsapkal55/Employee-Management-)
 
