@@ -3,7 +3,6 @@
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![GitHub last commit](https://img.shields.io/github/last-commit/prasadsapkal55/Employee-Management-?color=blue)
 
 A lightweight Django-based Employee Management System with full CRUD functionality developed by Prasad Sapkal.
 
