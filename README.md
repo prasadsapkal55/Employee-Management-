@@ -1,4 +1,3 @@
-```markdown
 # Employee Management System 🏢
 
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
@@ -145,4 +144,3 @@ Project Link: [https://github.com/prasadsapkal55/Employee-Management-](https://g
 ---
 
 ⭐ Feel free to star the repository if you find this project useful!
-```
