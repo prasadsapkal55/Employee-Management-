@@ -259,7 +259,7 @@ The application is fully responsive and works seamlessly across:
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Prasad Sapkal**
 - <a href="https://github.com/prasadsapkal55">GitHub</a>
 - <a href="https://linkedin.com/in/prasad-sapkal">LinkedIn</a>
 
