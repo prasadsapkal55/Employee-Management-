@@ -260,8 +260,8 @@ The application is fully responsive and works seamlessly across:
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [@yourusername](https://github.com/prasadsapkal55)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/prasad-sapkal)
 
 ## 🙏 Acknowledgments
 
