@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List - Employee Management System</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        
+        .navbar {
+            background: linear-gradient(45deg, #2196F3, #21CBF3) !important;
+            border-radius: 15px 15px 0 0;
+            padding: 1rem 2rem;
+        }
+        
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand:hover {
+            color: rgba(255, 255, 255, 0.8) !important;
+            transform: scale(1.05);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white !important;
+            transform: translateY(-2px);
+        }
+        
+        .content-container {
+            padding: 2rem;
+        }
+        
+        .page-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .page-title i {
+            color: #2196F3;
+            margin-right: 10px;
+        }
+        
+        .table-container {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .table {
+            margin-bottom: 0;
+        }
+        
+        .table thead {
+            background: linear-gradient(45deg, #2196F3, #21CBF3);
+            color: white;
+        }
+        
+        .table thead th {
+            border: none;
+            font-weight: 600;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .table tbody td {
+            padding: 1rem;
+            vertical-align: middle;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .table tbody tr:hover {
+            background-color: #f8f9fa;
+            transform: scale(1.01);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-action {
+            margin: 0 3px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-edit {
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            color: white;
+            border: none;
+        }
+        
+        .btn-edit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .btn-delete {
+            background: linear-gradient(45deg, #f44336, #d32f2f);
+            color: white;
+            border: none;
+        }
+        
+        .btn-delete:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(244, 67, 54, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .btn-add {
+            background: linear-gradient(45deg, #4caf50, #45a049);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-add:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .alert {
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+        }
+        
+        .empty-state i {
+            font-size: 4rem;
+            color: #ddd;
+            margin-bottom: 1rem;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .content-container {
+            animation: slideIn 0.6s ease-out;
+        }
+        
+        .employee-id {
+            background: #e3f2fd;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-weight: 600;
+            color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="main-container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand" style="text-decoration: none;">
+                    <i class="fas fa-users"></i> Employee Management System
+                </a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="/emp/">
+                        <i class="fas fa-user-plus"></i> Add Employee
+                    </a>
+                    <a class="nav-link" href="/show/">
+                        <i class="fas fa-list"></i> View All
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Messages -->
+        {% if messages %}
+            <div class="px-4 pt-3">
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>{{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <!-- Content -->
+        <div class="content-container">
+            <h2 class="page-title">
+                <i class="fas fa-users"></i>Employee Directory
+            </h2>
+
+            {% if employees %}
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th><i class="fas fa-id-badge me-2"></i>Employee ID</th>
+                                <th><i class="fas fa-user me-2"></i>Name</th>
+                                <th><i class="fas fa-envelope me-2"></i>Email</th>
+                                <th><i class="fas fa-phone me-2"></i>Contact</th>
+                                <th><i class="fas fa-cogs me-2"></i>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for employee in employees %} 
+                            <tr>
+                                <td><span class="employee-id">{{employee.eid}}</span></td>
+                                <td><strong>{{employee.ename}}</strong></td>
+                                <td>{{employee.eemail}}</td>
+                                <td>{{employee.econtact}}</td>
+                                <td>
+                                    <a href="/edit/{{employee.id}}/" class="btn-action btn-edit">
+                                        <i class="fas fa-edit me-1"></i>Edit
+                                    </a>
+                                    <a href="/delete/{{employee.id}}/" class="btn-action btn-delete" 
+                                       onclick="return confirm('⚠️ Are you sure you want to delete {{employee.ename}}? This action cannot be undone.')">
+                                        <i class="fas fa-trash me-1"></i>Delete
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="empty-state">
+                    <i class="fas fa-users-slash"></i>
+                    <h4>No Employees Found</h4>
+                    <p>It looks like you haven't added any employees yet. Start by adding your first employee!</p>
+                </div>
+            {% endif %}
+
+            <div class="text-center mt-4">
+                <a href="/emp/" class="btn-add">
+                    <i class="fas fa-plus me-2"></i>Add New Employee
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Add table row animations
+    document.querySelectorAll('tbody tr').forEach((row, index) => {
+        row.style.animation = `slideIn 0.6s ease-out ${index * 0.1}s`;
+        row.style.opacity = '0';
+        row.style.animationFillMode = 'forwards';
+    });
+    
+    // Add loading effect for actions
+    document.querySelectorAll('.btn-action').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            if (this.classList.contains('btn-delete')) {
+                // Delete confirmation already handled in onclick
+                return;
+            }
+            
+            // Add loading state for edit button
+            this.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Loading...';
+            this.style.pointerEvents = 'none';
+        });
+    });
+</script>
+
+</body>
+</html>
