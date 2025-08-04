@@ -4,7 +4,6 @@ A modern, feature-rich Employee Management System built with Django, featuring a
 
 ![Employee Management System](https://img.shields.io/badge/Django-5.2.4-green.svg)
 ![Python](https://img.shields.io/badge/Python-3.13-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 🌟 Features
 
@@ -30,6 +29,63 @@ A modern, feature-rich Employee Management System built with Django, featuring a
 - **Confirmation dialogs** for destructive actions
 - **Empty state handling** when no data exists
 - **Mobile-responsive** navigation and forms
+
+## 📸 Screenshots & Demo
+
+### 🏠 Home Page (Add Employee Form)
+![Add Employee Form](screenshots/Add%20Employee.png)
+*Modern form design with gradient background and real-time validation*
+
+### 📋 Employee List View
+![Employee List](screenshots/Show%20Employee.png)
+*Beautiful table with hover effects and action buttons*
+
+### ✏️ Edit Employee
+![Edit Employee](screenshots/Update%20Employee.png)
+*Pre-populated form with professional styling*
+
+## 🎨 Feature Highlights
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/Add%20Employee.png" alt="Add Employee" width="280"/>
+      <br>
+      <b>✨ Add New Employee</b>
+      <br>
+      <em>Elegant form with real-time validation</em>
+    </td>
+    <td align="center">
+      <img src="screenshots/Show%20Employee.png" alt="Show Employees" width="280"/>
+      <br>
+      <b>👥 Employee Directory</b>
+      <br>
+      <em>Professional table with action buttons</em>
+    </td>
+    <td align="center">
+      <img src="screenshots/Update%20Employee.png" alt="Update Employee" width="280"/>
+      <br>
+      <b>📝 Edit Employee</b>
+      <br>
+      <em>Pre-filled form for easy updates</em>
+    </td>
+  </tr>
+</table>
+
+## 🚀 Application Workflow
+
+1. **➕ Add Employee** → Use the home page form to add new employees
+2. **👀 View All** → See all employees in a beautiful table format  
+3. **✏️ Edit** → Click edit button to modify employee details
+4. **🗑️ Delete** → Remove employees with confirmation dialog
+
+## 🎯 Key Features Demonstrated
+
+- ✅ **Modern UI Design** - Gradient backgrounds and professional styling
+- ✅ **Responsive Layout** - Works perfectly on all screen sizes
+- ✅ **Form Validation** - Real-time feedback and error handling
+- ✅ **CRUD Operations** - Complete Create, Read, Update, Delete functionality
+- ✅ **User Experience** - Smooth animations and intuitive navigation
 
 ## 🚀 Quick Start
 
@@ -201,87 +257,17 @@ The application is fully responsive and works seamlessly across:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 **Your Name**
 - GitHub: [@yourusername](https://github.com/yourusername)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
 
 ## 🙏 Acknowledgments
 
 - Django documentation and community
 - Bootstrap for the responsive framework
 - Font Awesome for the beautiful icons
-- The open-source community
-
-## 📸 Screenshots & Demo
-
-### 🏠 Home Page (Add Employee Form)
-![Add Employee Form](screenshots/Add%20Employee.png)
-*Modern form design with gradient background and real-time validation*
-
-### 📋 Employee List View
-![Employee List](screenshots/Show%20Employee.png)
-*Beautiful table with hover effects and action buttons*
-
-### ✏️ Edit Employee
-![Edit Employee](screenshots/Update%20Employee.png)
-*Pre-populated form with professional styling*
-
-## 🎨 Feature Highlights
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="screenshots/Add%20Employee.png" alt="Add Employee" width="280"/>
-      <br>
-      <b>✨ Add New Employee</b>
-      <br>
-      <em>Elegant form with real-time validation</em>
-    </td>
-    <td align="center">
-      <img src="screenshots/Show%20Employee.png" alt="Show Employees" width="280"/>
-      <br>
-      <b>👥 Employee Directory</b>
-      <br>
-      <em>Professional table with action buttons</em>
-    </td>
-    <td align="center">
-      <img src="screenshots/Update%20Employee.png" alt="Update Employee" width="280"/>
-      <br>
-      <b>📝 Edit Employee</b>
-      <br>
-      <em>Pre-filled form for easy updates</em>
-    </td>
-  </tr>
-</table>
-
-## 🚀 Application Workflow
-
-1. **➕ Add Employee** → Use the home page form to add new employees
-2. **👀 View All** → See all employees in a beautiful table format  
-3. **✏️ Edit** → Click edit button to modify employee details
-4. **🗑️ Delete** → Remove employees with confirmation dialog
-
-## 🎯 Key Features Demonstrated
-
-- ✅ **Modern UI Design** - Gradient backgrounds and professional styling
-- ✅ **Responsive Layout** - Works perfectly on all screen sizes
-- ✅ **Form Validation** - Real-time feedback and error handling
-- ✅ **CRUD Operations** - Complete Create, Read, Update, Delete functionality
-- ✅ **User Experience** - Smooth animations and intuitive navigation
-
-## 🎥 Live Demo
-> **Note**: You can also add a live demo link here if you deploy to platforms like Heroku, Render, or Railway.
-
-```markdown
-🚀 **[Live Demo](https://your-app-name.herokuapp.com)** - Try it yourself!
-```
 
 ---
 
