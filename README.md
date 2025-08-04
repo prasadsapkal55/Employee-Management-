@@ -30,7 +30,7 @@ A modern, feature-rich Employee Management System built with Django, featuring a
 - **Empty state handling** when no data exists
 - **Mobile-responsive** navigation and forms
 
-## 📸 Screenshots & Demo
+## 📸 Screenshots
 
 ### 🏠 Home Page (Add Employee Form)
 ![Add Employee Form](screenshots/Add%20Employee.png)
