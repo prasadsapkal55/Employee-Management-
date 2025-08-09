@@ -315,7 +315,6 @@
 </div>
 
 <script>
-    // Form validation
     document.getElementById('editEmployeeForm').addEventListener('submit', function(e) {
         let isValid = true;
         let fields = ['eid', 'ename', 'eemail', 'econtact'];
@@ -337,7 +336,6 @@
         }
     });
     
-    // Real-time validation
     document.querySelectorAll('input').forEach(function(input) {
         input.addEventListener('input', function() {
             if (this.value.trim()) {
@@ -347,7 +345,6 @@
             }
         });
         
-        // Add focus effects
         input.addEventListener('focus', function() {
             this.parentElement.style.transform = 'translateY(-2px)';
         });
@@ -357,7 +354,6 @@
         });
     });
     
-    // Add shake animation
     let style = document.createElement('style');
     style.textContent = `
         @keyframes shake {
