@@ -292,7 +292,6 @@
 </div>
 
 <script>
-    // Form validation
     document.getElementById('employeeForm').addEventListener('submit', function(e) {
         let isValid = true;
         let fields = ['eid', 'ename', 'eemail', 'econtact'];
@@ -314,7 +313,6 @@
         }
     });
     
-    // Real-time validation
     document.querySelectorAll('input').forEach(function(input) {
         input.addEventListener('input', function() {
             if (this.value.trim()) {
@@ -325,7 +323,6 @@
         });
     });
     
-    // Add shake animation
     let style = document.createElement('style');
     style.textContent = `
         @keyframes shake {
